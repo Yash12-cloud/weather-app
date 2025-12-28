@@ -15,7 +15,8 @@ async function fetchWeather() {
     }
 
     try {
-        const response = await fetch(`http://127.0.0.1:5000/weather?city=${city}`);
+        const response = await fetch(`https://weather-app-6xqp.onrender.com/weather?city=${city}`);
+
 
         if (!response.ok) {
             throw new Error("City not found");
